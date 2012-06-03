@@ -27,7 +27,7 @@
 package AMAROK;
 
 IRC::register ("dcopAMAROK", "1.0", "", "");
-IRC::add_command_handler("mp3", "AMAROK::amarok_handler");
+IRC::add_command_handler("dcopamarok", "AMAROK::amarok_handler");
 
 sub amarok_handler {
   $title = `dcop amarok player nowPlaying`;
